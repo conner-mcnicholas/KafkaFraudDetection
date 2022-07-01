@@ -43,7 +43,7 @@ To clear the cache out required removal of containers/images that are no longer 
 `alias docker_clean_im='docker rmi $(docker images -a -q)'`<br>
 
 To compare the output from the fraudulent and legitimate transaction stream output over the same time duration<br>
-&emsp;&emsp;&emsp;&emsp;-start kafka-consumer with pseudo-TTY allocation disabled with '-T, --no-TTY' option on docker exec command<br>
+&emsp;&emsp;&emsp;&emsp;-start kafka-consumer with pseudo-TTY allocation disabled with '-T' option on docker exec command<br>
 &emsp;&emsp;&emsp;&emsp;-redirect stdout to file on local filesystem<br>
 &emsp;&emsp;&emsp;&emsp;-send process to the background<br>
 &emsp;&emsp;&emsp;&emsp;-sleep for prescribed duration<br>
