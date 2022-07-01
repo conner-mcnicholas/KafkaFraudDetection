@@ -11,6 +11,7 @@ Block diagram of the fraud detection system:<br>
 ![alt text](https://github.com/conner-mcnicholas/KafkaFraudDetection/blob/main/imgs/blockdiagram.png?raw=true)
 
 <br>
+
 ### To Run:
 
 This simulation can be replicated as described below using:<br>
