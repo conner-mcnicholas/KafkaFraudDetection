@@ -21,6 +21,8 @@ This simulation can be replicated as described below using:<br>
 
 ![alt text](https://github.com/conner-mcnicholas/KafkaFraudDetection/blob/main/imgs/simulation.png?raw=true)
 
+<br>
+
 ### Lessons:
 
 I needed to clear the docker cache out because of error in transactions.py transferred using copy/paste<br>
