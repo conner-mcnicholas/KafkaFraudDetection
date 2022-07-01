@@ -1,6 +1,6 @@
 # KafkaFraudDetection
 
-## Building A Streaming Fraud Detection System With Kafka And Python and Docker
+## Building A Streaming Fraud Detection System With Kafka, Python, and Docker
 
 This application generates a stream of transactions and processes them to detect which ones are potential fraud.<br>
 Fake transactions are generated on one end with a transaction generator, then filtered for suspicious activity<br>
