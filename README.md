@@ -5,7 +5,7 @@
 This application generates a stream of transactions and processes them to detect which ones are potential fraud.<br>
 Fake transactions are generated on one end with a transaction generator, then filtered for suspicious activity<br>
 the other end with a fraud detector. (Because this is intended to be instructive as a Kafka exercise and not financial compliance<br>
-regulations, the metric for fraudulent activity is simply a price treshold <= 900 given randomly generated prices between $0-$1000.)<br>
+regulations, fraudulent activity is defined by a price treshold > $900 given randomly generated prices between $0-$1000.)<br>
 Both applications will run in Docker containers and interact with the Kafka cluster.<br>
 <br>
 Block diagram of the fraud detection system:<br>
