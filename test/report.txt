@@ -1,0 +1,12 @@
+collecting sample of fraudulent transactions for 25 seconds...
+done!
+
+collecting sample of legitimate transactions for 25 seconds..
+done!
+
+# fraudulent transactions =  552
+# legitimate transactions =  4570
+
+yielding...
+transaction fraud rate =  10.77 %
+(expecting ~ 10%)
