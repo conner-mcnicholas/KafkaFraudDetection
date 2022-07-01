@@ -16,14 +16,19 @@ Block diagram of the fraud detection system:<br>
 
 ### To Run:
 
-This simulation can be replicated as described below using:<br>
-`./test/run.sh > report.out`<br>
+From terminal in project base directory,<br>
+ `docker-compose -f docker-compose.kafka.yml up`<br>
+Leave running, then from new terminal session:<br>
+`docker-compose up`<br>
+Leave running, then from new terminal session:<br>
+`cd test`<br>
+`./run.sh > report.out`<br>
 
 ![alt text](https://github.com/conner-mcnicholas/KafkaFraudDetection/blob/main/imgs/simulation.png?raw=true)
 
 <br>
 
-### Lessons:
+### Lessons Learned:
 
 I needed to clear the docker cache out because of error in transactions.py transferred using copy/paste<br>
 &emsp;&emsp;&emsp;&emsp;-Python failed with: 'Invalid characer in identifier" due to incompatible doubles quote (") ascii char<br>
