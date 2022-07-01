@@ -1,5 +1,25 @@
 # KafkaFraudDetection
 
+## Building A Streaming Fraud Detection System With Kafka And Python and Docker
+
+This application generates a stream of transactions and processes them to detect which ones are potential fraud.<br>
+To produce fake transactions on one end with a transaction generator, then filter and log those that look suspicious on<br>
+the other end with a fraud detector. Both applications will run in Docker containers and interact with the Kafka cluster.<br>
+<br>
+Block diagram of the fraud detection system:<br>
+
+![alt text](https://github.com/conner-mcnicholas/KafkaFraudDetection/blob/main/imgs/blockdiagram.png?raw=true)
+
+<br>
+### To Run:
+
+This simulation can be replicated as described below using:<br>
+`./test/run.sh > report.out`<br>
+
+![alt text](https://github.com/conner-mcnicholas/KafkaFraudDetection/blob/main/imgs/simulation.png?raw=true)
+
+### Lessons:
+
 I needed to clear the docker cache out because of error in transactions.py transferred using copy/paste<br>
 &emsp;&emsp;&emsp;&emsp;-Python failed with: 'Invalid characer in identifier" due to incompatible doubles quote (") ascii char<br>
 &emsp;&emsp;&emsp;&emsp;-Even after modifying transactions.py to use the correct char, it still failed from the same error.<br>
@@ -19,8 +39,3 @@ To compare the output from the fraudulent and legitimate transaction stream outp
 &emsp;&emsp;&emsp;&emsp;-sleep for prescribed duration<br>
 &emsp;&emsp;&emsp;&emsp;-find and kill the PID of the bg kafka-consumer process<br>
 &emsp;&emsp;&emsp;&emsp;-count number of messages in each stream stdout file<br>
-<br>
-This exercise can be replicated using:<br>
-`./test/run.sh > report.out`<br>
-
-![alt text](https://github.com/conner-mcnicholas/KafkaFraudDetection/blob/main/imgs/simulation.png?raw=true)
